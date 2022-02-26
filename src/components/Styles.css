@@ -1,3 +1,5 @@
+/* colors:  #B5C2B7, #8C93A8, #62466B, #45364B, #2D2327*/
+
 
 .Title1 {
   color: black;
@@ -51,5 +53,25 @@
 .home{
   background-color: #8C93A8;
   width: 100vw;
-  height: 100vw;
+  height: 100vh;
+}
+
+.button{
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  background-color: #555555;
+  font-size: 20px;
+  padding: 2px 24px;
+  border-radius: 8px;
+}
+
+.box{
+  align-self: center;
+  align-content: center;
+  text-align: center;
+  align-items: center;
+  padding: 10px;
 }

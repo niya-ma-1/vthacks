@@ -2,9 +2,11 @@ import "./App.css";
 import NavBar from "./components/NavBar";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { Home } from "./components/Pages/Home";
-import { About } from "./components/Pages/About";
+import { Create } from "./components/Pages/Create";
 import { Donation } from "./components/Pages/Donation";
 import Contact from "./components/Pages/Contact";
+import { useAuth0 } from "@auth0/auth0-react";
+import Profile from "./components/Profile";
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -16,18 +18,21 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 />
 
 function App() {
+  const { isLoading }  = useAuth0();
+  if (isLoading) return <div>Loading...</div>
   return (
     <>
       <Router>
         <NavBar/>
-
-        <div className="pages">
+        <Profile/>
+        <div className='pages'>
           <Route>
             <Route exact path="/" component={Home} />
-            <Route path="/about" component={About} />
+            <Route path="/create" component={Create} />
             <Route path="/donation" component={Donation} />
             <Route path="/contact" component={Contact} />
           </Route>
+          <Profile/>
         </div>
       </Router>
     </>

@@ -4,6 +4,12 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { Auth0Provider } from '@auth0/auth0-react';
+
+
+const domain = process.env.REACT_APP_AUTH0_DOMAIN;
+const clientId  = process.env.REACT_APP_AUTH0_CLIENT_ID;
+
 <link
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
@@ -12,9 +18,14 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 />
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <Auth0Provider
+  domain={domain}
+  clientId={clientId}
+  redirectUri={window.location.origin}>
+    <React.StrictMode>
+      <App />
+    </React.StrictMode> 
+  </Auth0Provider>,
   document.getElementById('root')
 );
 
