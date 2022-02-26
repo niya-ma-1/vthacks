@@ -63,7 +63,7 @@
 
 .nav-item:hover:after {
   width: 100%;
-  background: #2D2327;
+  background: #ffffff;
 }
 
 .nav-item .active {
@@ -96,7 +96,7 @@
     z-index: 1;
   }
   .nav-item .active {
-    color: #2D2327;
+    color: #8C93A8;
     border: none;
   }
   .nav-links {

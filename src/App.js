@@ -3,7 +3,7 @@ import NavBar from "./components/NavBar";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { Home } from "./components/Pages/Home";
 import { About } from "./components/Pages/About";
-import { List } from "./components/Pages/List";
+import { Donation } from "./components/Pages/Donation";
 import Contact from "./components/Pages/Contact";
 
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -19,15 +19,15 @@ function App() {
   return (
     <>
       <Router>
-        <NavBar />
+        <NavBar/>
 
         <div className="pages">
-          <Switch>
+          <Route>
             <Route exact path="/" component={Home} />
             <Route path="/about" component={About} />
-            <Route path="/List" component={List} />
+            <Route path="/donation" component={Donation} />
             <Route path="/contact" component={Contact} />
-          </Switch>
+          </Route>
         </div>
       </Router>
     </>
