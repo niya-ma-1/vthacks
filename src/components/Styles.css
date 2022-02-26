@@ -1,0 +1,55 @@
+
+.Title1 {
+  color: black;
+  display: "flex";
+  align-items: "center";
+  justify-content: "center";
+  align-self: "center";
+  text-align: center;
+  font-size: 100px;
+}
+.Title2 {
+  color: rgb(247, 0, 255);
+  display: "flex";
+  align-items: "center";
+  text-align: center;
+  justify-content: "center";
+  padding: 5%;
+  font-size: 30px;
+}
+.body{
+    padding: 5%;
+    font-size: 30px;
+    background-color: #fbfbbc;
+    width: 100vw;
+    height: 100vh;
+}
+
+.form{
+    padding-Left: 20%;
+    padding-Right: 20%;
+    
+}
+
+.splitScreen {
+  display: flex;
+  flex-Direction: row;
+}
+
+.topPane {
+  width: 50%;
+}
+
+.bottomPane {
+  width: 50%;
+}
+
+.bg{
+  background-image: './assets/bg.gif';
+}
+
+.home{
+  background-color: #8C93A8;
+  width: 100vw;
+  height: 100vw;
+}
