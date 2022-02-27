@@ -33,9 +33,9 @@ function App() {
             <Route path="/donation" component={Donation} />
             <Route path="/contact" component={Contact} />
             <Route path="/transaction" component={Transaction} />
-          </Route>
+          </Route><Footer/>
         </div>
-        <Footer/>
+        
       </Router>
     </>
   );

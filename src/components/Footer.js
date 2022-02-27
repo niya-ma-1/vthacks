@@ -5,7 +5,7 @@ import './Styles.css';
 const Footer = () => {
     return (
         <div className="footer">
-            <b>Timothy Smith</b>&nbsp;(https://github.com/smith-77),&emsp;<b> Niya Ma</b>&nbsp;(https://github.com/niya-ma-1), &emsp; <b> Olsen Budanur</b> &nbsp;(https://github.com/https://github.com/olsenbudanur)
+            <a href='https://github.com/smith-77'><b>Timothy Smith</b></a>  &emsp;&emsp;<a href='https://github.com/niya-ma-1'><b> Niya Ma</b></a>  &emsp;&emsp; <a href='https://github.com/olsenbudanur'><b> Olsen Budanur</b></a> &nbsp;
         </div>
     );
 }

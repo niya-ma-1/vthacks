@@ -41,6 +41,7 @@ export const Create = () => {
 
     return (
         !isAuthenticated && (
+          <div className='page'>
           <div className="credit-card w-full lg:w-1/2 sm:w-auto shadow-lg mx-auto rounded-xl bg-white">
             <main className="mt-4 p-4">
               <h1 className="text-xl font-semibold text-gray-700 text-center">
@@ -50,8 +51,10 @@ export const Create = () => {
             <footer className="p-4">
                 <LoginButton>Log In</LoginButton>
             </footer>
+          </div>
           </div>) ||
         isAuthenticated && (
+          <div className='page'>
             <form className="m-4" onSubmit={handleCreate}>
         <div className="credit-card w-full lg:w-1/2 sm:w-auto shadow-lg mx-auto rounded-xl bg-white">
           <main className="mt-4 p-4">
@@ -113,6 +116,9 @@ export const Create = () => {
           </footer>
         </div>
       </form>
+      
+      </div>
+      
         )
         
     )

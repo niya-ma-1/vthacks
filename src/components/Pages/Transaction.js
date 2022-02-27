@@ -2,7 +2,7 @@ import { useState } from "react";
 import { ethers } from "ethers";
 import ErrorMessage from "./ErrorMessage";
 import TxList from "./TxList";
-
+import '../Styles.css';
 
 const startPayment = async ({ setError, setTxs, ether, addr }) => {
     try {
@@ -43,6 +43,7 @@ const Transaction = () => {
     };
   
     return (
+      <div className='page'>
       <form className="m-4" onSubmit={handleSubmit}>
         <div className="credit-card w-full lg:w-1/2 sm:w-auto shadow-lg mx-auto rounded-xl bg-white">
           <main className="mt-4 p-4">
@@ -81,6 +82,7 @@ const Transaction = () => {
           </footer>
         </div>
       </form>
+      </div>
     );
   }
 

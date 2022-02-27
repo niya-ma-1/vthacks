@@ -32,6 +32,7 @@ export const Donation = () => {
   const attributes = ["title", "description", "author", "goal", "address"];
 
   return (
+    <div className="page">
       <Table responsive>
       <thead>
         <tr>
@@ -50,6 +51,9 @@ export const Donation = () => {
           ))}
         </tbody>
       </Table>
+      {/* <div style={{height:"20px", backgroundColor: 'black'}}>
+      </div> */}
+      </div>
   );
   
 };

@@ -1,6 +1,5 @@
 /* FDFCF6 CCC9C2 40464F B3B9BE 232625 */
 
-
 .Title1 {
   color: black;
   display: "flex";
@@ -19,23 +18,22 @@
   padding: 5%;
   font-size: 30px;
 }
-.body{
-    padding: 5%;
-    font-size: 30px;
-    background-color: #fbfbbc;
-    width: 100vw;
-    height: 100vh;
+.body {
+  padding: 5%;
+  font-size: 30px;
+  background-color: #fbfbbc;
+  width: 100vw;
+  height: 100vh;
 }
 
-.form{
-    padding-Left: 20%;
-    padding-Right: 20%;
-    
+.form {
+  padding-left: 20%;
+  padding-right: 20%;
 }
 
 .splitScreen {
   display: flex;
-  flex-Direction: row;
+  flex-direction: row;
 }
 
 .topPane {
@@ -46,17 +44,23 @@
   width: 50%;
 }
 
-.bg{
-  background-image: './assets/bg.gif';
+.bg {
+  background-image: "./assets/bg.gif";
 }
 
-.home{
-  background-color: #8C93A8;
+.home {
+  background-color: #8c93a8;
   width: 100vw;
   height: 100vh;
 }
 
-.button{
+.page {
+  background-color: white;
+  width: 100vw;
+  height: 80vh;
+}
+
+.button {
   border: none;
   color: white;
   text-align: center;
@@ -68,7 +72,7 @@
   border-radius: 8px;
 }
 
-.box{
+.box {
   align-self: center;
   align-content: center;
   text-align: center;
@@ -77,39 +81,36 @@
   height: 100px;
 }
 
-.blockaideTitle
-{
-  width:auto;
+.blockaideTitle {
+  width: auto;
   height: 25vw;
-  color:white;
-  text-align:center;
-  vertical-align:center;
-  margin-top:7vw;
-  font: 15vw 'Franklin Gothic Medium', sans-serif;
-  text-size-adjust:50%;
+  color: white;
+  text-align: center;
+  vertical-align: center;
+  margin-top: 7vw;
+  font: 15vw "Franklin Gothic Medium", sans-serif;
+  text-size-adjust: 50%;
 }
 
-.aboutTextBlock
-{
-  width:auto;
+.aboutTextBlock {
+  width: auto;
   height: 350px;
-  color:#CCC9C2;
-  background-color:#232625;
-  padding:75px;
-  text-align:left;
-  font-size: 2rem;
+  color: #ccc9c2;
+  background-color: #232625;
+  padding: 3vw;
+  text-align: left;
+  font-size: 210%;
 }
 
-.footer
-{
-  border-top: solid #CCC9C2 .5px;
-  position:bottom;
+.footer {
+  border-top: solid #ccc9c2 0.5px;
+  position: bottom;
   bottom: 0;
   left: 0;
-  padding: 3vw 5vw 5vw 5vw;
   background-color: #232625;
   color: white;
-  height: 80px;
+  padding: 20px;
+  height: 7vh;
   width: 100%;
   text-align: center;
 }
