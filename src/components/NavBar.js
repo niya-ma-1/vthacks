@@ -51,10 +51,6 @@ function NavBar() {
               </NavLink>
             </li>
             <li className="nav-item">
-              <LoginButton />
-              <LogoutButton />
-            </li>
-            <li className="nav-item">
               <NavLink
                 exact
                 to="/transaction"
@@ -64,6 +60,10 @@ function NavBar() {
               >
                 Transaction
               </NavLink>
+            </li>
+            <li className="nav-item">
+              <LoginButton />
+              <LogoutButton />
             </li>
           </ul>
           <div className="nav-icon" onClick={handleClick}>
