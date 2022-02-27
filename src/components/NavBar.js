@@ -47,7 +47,7 @@ function NavBar() {
                 className="nav-links"
                 onClick={handleClick}
               >
-                Donations
+                Crowdfunding
               </NavLink>
             </li>
             <li className="nav-item">
@@ -58,7 +58,7 @@ function NavBar() {
                 className="nav-links"
                 onClick={handleClick}
               >
-                Transaction
+                Donate
               </NavLink>
             </li>
             <li className="nav-item">

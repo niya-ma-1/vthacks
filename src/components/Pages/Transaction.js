@@ -49,6 +49,7 @@ const Transaction = () => {
             <h1 className="text-xl font-semibold text-gray-700 text-center">
               Send ETH payment
             </h1>
+            <div style={{margin:"25px 17vw 25px 17vw"}}>To send a donation, find the crowdfunding project you want to donate to on the 'Crowdfunding' tab. Next, enter the public Ethereum address published for the project, enter the amount of ETH you'd like to donate, and hit 'Pay Now'</div>
             <div className="">
               <div className="my-3">
                 <input

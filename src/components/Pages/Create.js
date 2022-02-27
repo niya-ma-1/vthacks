@@ -58,6 +58,8 @@ export const Create = () => {
             <h1 className="text-xl font-semibold text-gray-700 text-center">
               Create Crowdfunding Project
             </h1>
+            <div style={{margin:"25px 17vw 25px 17vw"}}>To raise money through BlockAide, create a crowdfunding project that publishes a public Ethereum address to receive donations. Simply enter the relevant details and hit 'Create'</div>
+            <h6>Please note that once your Ethereum address has been set, it cannot be changed!</h6>
             <div className="">
               <div className="my-3">
                 <input
