@@ -63,7 +63,7 @@ const Transaction = () => {
               <div className="my-3">
                 <input
                   name="ether"
-                  type="text"
+                  type="number"
                   className="input input-bordered block w-full focus:ring focus:outline-none"
                   placeholder="Amount in ETH"
                 />
