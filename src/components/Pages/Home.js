@@ -29,7 +29,7 @@ export const Home = () => {
           <div className="blockaideTitle">BLOCKAIDE</div>
         </Parallax>
         <div class="aboutTextBlock">
-          <b>Breaking the digital blockade</b><br></br><br></br>
+          <b>Breaking through the digital blockade for finance</b><br></br><br></br>
           Unlike traditional crowdfunding, BlockAide is a tool based on the blockchain. By making crowdfunding decoupled, BlockAide provides...
         </div>
         <Parallax bgImage={resources} bgImageAlt="Cyber swirls on black background" strength={500}>

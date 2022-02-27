@@ -7,6 +7,9 @@ import LoginButton from "../LoginButton";
 export const Create = () => {
     const { loginWithRedirect, isAuthenticated } = useAuth0();
     const { user } = useAuth0();
+    const clearInputs = () => {
+      alert("hi");
+    }
 
     const handleCreate = async (e) => {
         e.preventDefault();
@@ -17,6 +20,15 @@ export const Create = () => {
         let author = user['name'];
         let address = data.get("address");
 
+        // Clear input fields
+        document.getElementById("title").value = null;
+        document.getElementById("description").value = null;
+        document.getElementById("goal").value = null;
+        document.getElementById("address").value = null;
+        
+        // Alert user of successful creation
+        let message = 'Your project "' + title  + '" with the goal of raising ' + goal + ' ETH has been successfully created!\n\nAuthor: ' + author + '\nAddress: ' + address
+        alert(message)
         await setDoc(doc(db, "CrowdFundingProjects", title + "-" + user['sub']), {
             title: title,
             description: description,
@@ -49,6 +61,8 @@ export const Create = () => {
             <div className="">
               <div className="my-3">
                 <input
+                  required
+                  id="title"
                   type="text"
                   name="title"
                   className="input input-bordered block w-full focus:ring focus:outline-none"
@@ -57,6 +71,8 @@ export const Create = () => {
               </div>
               <div className="my-3">
                 <input
+                  required
+                  id="description"
                   name="description"
                   type="text"
                   className="input input-bordered block w-full focus:ring focus:outline-none"
@@ -65,18 +81,22 @@ export const Create = () => {
               </div>
               <div className="my-3">
                 <input
+                  required
+                  id="goal"
                   name="goal"
                   type="number"
                   className="input input-bordered block w-full focus:ring focus:outline-none"
-                  placeholder="Goal"
+                  placeholder="Goal (ETH)"
                 />
               </div>
               <div className="my-3">
                 <input
+                  required
+                  id="address"
                   name="address"
                   type="text"
                   className="input input-bordered block w-full focus:ring focus:outline-none"
-                  placeholder="Type Your ETH Address. PAY ATTENTION. THIS CANNOT BE CHANGED."
+                  placeholder="ETH Address IMMUTABLE!"
                 />
               </div>
             </div>
