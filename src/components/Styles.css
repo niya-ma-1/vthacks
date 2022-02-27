@@ -1,4 +1,4 @@
-/* colors:  #B5C2B7, #8C93A8, #62466B, #45364B, #2D2327*/
+/* FDFCF6 CCC9C2 40464F B3B9BE 232625 */
 
 
 .Title1 {
@@ -74,4 +74,38 @@
   text-align: center;
   align-items: center;
   padding: 10px;
+  height: 100vw;
+}
+
+.blockaideTitle
+{
+  width:auto;
+  height: 415px;
+  color:white;
+  text-align:center;
+  margin-top:100px;
+  font: 15rem 'Franklin Gothic Medium', sans-serif;
+}
+
+.aboutTextBlock
+{
+  width:auto;
+  height: 275px;
+  color:#CCC9C2;
+  background-color:#232625;
+  padding:100px;
+  text-align:left;
+  font-size: 2rem;
+}
+
+.aboutDescription
+{
+  margin:1000px;
+  background-color:#CCC9C2;
+  color:#272A2A;
+  padding:100px 100px 100px 100px;
+  text-align:left;
+  width:auto;
+  height: 200px;
+
 }
