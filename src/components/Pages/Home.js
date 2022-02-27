@@ -38,7 +38,7 @@ export const Home = () => {
         <div class="aboutTextBlock">
           <b>BlockAide has no third parties</b>
           <br></br>
-          <br></br>BlockAide publishes public Ethereum addresses for crowdfunding projects. This means that once a project has been published, control over projects is in the hands of the people, not third parties
+          <br></br>BlockAide publishes public Ethereum addresses for crowdfunding projects. This means that once a project has been published its control is in the hands of the people, not third parties
         </div>
         <Parallax bgImage={transparency} bgImageAlt="Cyber swirls on black background" strength={500}>
           <div className="blockaideTitle">Transparency</div>
