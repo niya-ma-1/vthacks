@@ -1,5 +1,7 @@
+/* FDFCF6 CCC9C2 40464F B3B9BE 232625 */
+
 .navbar {
-  background-color: #45364B;
+  background-color: #131515;
   height: 80px;
   display: flex;
   justify-content: center;
@@ -67,7 +69,7 @@
 }
 
 .nav-item .active {
-  color: #8C93A8;
+  color: #CCC9C2;
   border: 1px solid #2D2327;
 }
 
