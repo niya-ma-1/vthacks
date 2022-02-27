@@ -5,6 +5,7 @@ import { Home } from "./components/Pages/Home";
 import { Create } from "./components/Pages/Create";
 import { Donation } from "./components/Pages/Donation";
 import Contact from "./components/Pages/Contact";
+import Transaction from "./components/Pages/Transaction";
 import { useAuth0 } from "@auth0/auth0-react";
 import Profile from "./components/Profile";
 
@@ -31,6 +32,7 @@ function App() {
             <Route path="/create" component={Create} />
             <Route path="/donation" component={Donation} />
             <Route path="/contact" component={Contact} />
+            <Route path="/transaction" component={Transaction} />
           </Route>
           <Profile/>
         </div>

@@ -13,9 +13,7 @@ export const Donation = () => {
   return (
     
     <div>
-      <tbody>
-        
-      </tbody>
+      
      <ProgressBar now={user[0]} />
 
 

@@ -54,6 +54,17 @@ function NavBar() {
               <LoginButton />
               <LogoutButton />
             </li>
+            <li className="nav-item">
+              <NavLink
+                exact
+                to="/transaction"
+                activeClassName="active"
+                className="nav-links"
+                onClick={handleClick}
+              >
+                Transaction
+              </NavLink>
+            </li>
           </ul>
           <div className="nav-icon" onClick={handleClick}>
             <i className={click ? "fas fa-times" : "fas fa-bars"}></i>
