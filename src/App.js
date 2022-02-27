@@ -1,5 +1,6 @@
 import "./App.css";
 import NavBar from "./components/NavBar";
+import Footer from "./components/Footer";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { Home } from "./components/Pages/Home";
 import { Create } from "./components/Pages/Create";
@@ -34,6 +35,7 @@ function App() {
             <Route path="/transaction" component={Transaction} />
           </Route>
         </div>
+        <Footer/>
       </Router>
     </>
   );
