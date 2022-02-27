@@ -23,10 +23,10 @@ export const Home = () => {
 
   return (
     <div>
+      <meta name="viewport" content="initial-scale=1"></meta>
       <div className="bruh">
         <Parallax bgImage={city_skyline} bgImageAlt="City skyline with moving clouds" strength={500}>
           <div className="blockaideTitle">BLOCKAIDE</div>
-          
         </Parallax>
         <div class="aboutTextBlock">
           <b>Breaking the digital blockade</b><br></br><br></br>

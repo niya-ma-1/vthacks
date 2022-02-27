@@ -25,7 +25,6 @@ function App() {
     <>
       <Router>
         <NavBar/>
-        <Profile/>
         <div className='pages'>
           <Route>
             <Route exact path="/" component={Home} />
@@ -34,7 +33,6 @@ function App() {
             <Route path="/contact" component={Contact} />
             <Route path="/transaction" component={Transaction} />
           </Route>
-          <Profile/>
         </div>
       </Router>
     </>

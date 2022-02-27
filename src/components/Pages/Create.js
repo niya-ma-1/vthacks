@@ -32,7 +32,7 @@ export const Create = () => {
           <div className="credit-card w-full lg:w-1/2 sm:w-auto shadow-lg mx-auto rounded-xl bg-white">
             <main className="mt-4 p-4">
               <h1 className="text-xl font-semibold text-gray-700 text-center">
-                You must be logged in to create a fundraising project
+                You must be logged in to create a crowdfunding project
               </h1>
             </main>
             <footer className="p-4">
@@ -52,7 +52,7 @@ export const Create = () => {
                   type="text"
                   name="title"
                   className="input input-bordered block w-full focus:ring focus:outline-none"
-                  placeholder="Title of the Project"
+                  placeholder="Title"
                 />
               </div>
               <div className="my-3">
@@ -60,14 +60,18 @@ export const Create = () => {
                   name="description"
                   type="text"
                   className="input input-bordered block w-full focus:ring focus:outline-none"
-                  placeholder="Description of the Project"
+                  placeholder="Description"
                 />
+              </div>
+              <div className="my-3">
                 <input
                   name="goal"
-                  type="text"
+                  type="number"
                   className="input input-bordered block w-full focus:ring focus:outline-none"
-                  placeholder="Goal of the Project"
+                  placeholder="Goal"
                 />
+              </div>
+              <div className="my-3">
                 <input
                   name="address"
                   type="text"
